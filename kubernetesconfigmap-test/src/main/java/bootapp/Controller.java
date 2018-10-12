@@ -9,18 +9,25 @@ import java.util.*;
 
 @RestController
 class Controller {
-    @Value("${customnest.customvar:not available}")
+    @Value("${test_variables:test_variables are not available}")
+    private String message0;
+    @RequestMapping("/test_variables")
+    String getMessage0() {
+        return this.message0;
+    }
+
+    @Value("${test_variables.title:Title not available}")
     private String message;
-    @RequestMapping("/env_var")
+    @RequestMapping("/test_variables.title")
     String getMessage() {
         return this.message;
     }
 
-    @Value("${customnest.customvar1:not available}")
+    @Value("${test_variables.GlossDiv:GlossDiv not available}")
     private String message1;
-    @RequestMapping("/env_var1")
+    @RequestMapping("/test_variables.GlossDiv")
     String getMessage1() {
-        return this.message;
+        return this.message1;
     }
 
     @RequestMapping("/")

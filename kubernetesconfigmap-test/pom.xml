@@ -17,8 +17,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.fabric8</groupId>
-            <artifactId>spring-cloud-kubernetes-core</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-kubernetes</artifactId>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>

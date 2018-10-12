@@ -11,7 +11,7 @@ LABEL maintainer="aleksandrs.krivickis@gmail.com"
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=/target/FaceCutterAPI-1.0-SNAPSHOT.jar
+ARG JAR_FILE=/target/kubernetes-configmap-0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} websocket-demo.jar
